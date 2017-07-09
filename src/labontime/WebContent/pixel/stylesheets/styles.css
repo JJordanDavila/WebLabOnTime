@@ -1,0 +1,99 @@
+@CHARSET "UTF-8";
+
+.col-md-w1{width:1.6%; text-align: center;}
+.center{text-align: center; margin: 0 auto;}
+.tbl-enero{font-size: 0.85em;text-transform: uppercase;}
+thead tr th{text-align: center;}
+
+td11{content: "\f096";font-family: FontAwesome;}
+td22{content: content: "\f046";}
+.lsearch{font-size: 10.4px;font-weight: 700;}
+.hr_popover{margin-top:5px; margin-bottom:5px; border:0px;border-top: 1px solid #eee; overflow: hidden;}
+
+.gui {font-family: Arial;}
+
+.pad3_t{padding-top: 3px;}.pad3_b{padding-bottom: 3px;}
+.pad5_t{padding-top: 7px;}.pad5_b{padding-bottom: 7px;}
+
+.mtop10{margin-top: 10px;}
+.mtop15{margin-top: 11px;}
+
+.btn-w, .btn-w:focus {
+    border-color: #f19a1f;
+    border-bottom-color: #e38b0e;
+    background: #f4b04f;
+    background-image: -webkit-linear-gradient(top,#f4b254 0,#f3a537 100%);
+    background-image: linear-gradient(to bottom,#f4b254 0,#f3a537 100%);
+    background-repeat: repeat-x;
+}
+.btn-w {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+
+.overf {overflow: hidden;}
+
+.barra{color: #000; border: 1px solid #000; margin:10px 0px;}
+
+.title_ticket{color: #000; font-size: 20px; font-weight: bold;}
+.subtitle_ticket{color: #000; font-size: 16px; font-weight: 600;}
+.smalltitle_ticket{color: #000; font-size: 12px; font-weight: normal;}
+.d_block{display: block;}
+.m_bottom{margin-bottom: 10px;}
+.t_left{text-align: left;}
+.t_right{text-align: right;}
+.t_center{text-align: center;}
+
+.l_left{float: left;}
+.l_right{float: right;}
+
+.mp{margin:0px; padding: 0px;}
+
+
+.asterisco_form{color: red;}
+.esp_top_form{margin-top:10px;}
+.iForm {color: #000;}
+.font_form{font-size: 0.9em;}
+.dBorderTop{border-top: 0px;}
+
+.lb{font-size: 0.85em;}
+.lbp{font-size: 0.9em;}
+/*
+.modal-content{box-shadow: 0 5px 15px rgba(0,0,0,.5);}
+*/
+.modal-content{box-shadow: 0 20px 100px rgba(0,0,0,1);}
+
+.tb_1{margin:0px; padding:0px;}
+.tb_2{margin-top:0px!important; margin-left:0px; width:100%;}
+
+.lbl_frm{text-align: left;}
+.nonetxt{text-transform: none}
+.minutxt{text-transform: lowercase}
+.mayuxt{text-transform: uppercase;}
+.capiuxt{text-transform: capitalize;}
+
+
+
+
+/*
+.modal
+{
+    overflow: hidden;
+}
+.modal-dialog{
+    margin-right: 0;
+    margin-left: 0;
+}
+*/
+
+
+.marginRight{margin: 0px 50px 30px 0px; border: 1px solid #777; background: #FFE599; text-align: center; border-radius: 5px; }
+.iconPanel{font-size: 700%; text-align: center;}
+.marginRight h4 a{color: black; text-decoration: none;}
+.marginRight h4 a:hover{color: black; text-decoration: underline;}
+
+
+
+
+
