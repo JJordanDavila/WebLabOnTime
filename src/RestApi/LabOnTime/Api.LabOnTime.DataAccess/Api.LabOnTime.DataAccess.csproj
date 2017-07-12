@@ -46,8 +46,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DADoctors.cs" />
+    <Compile Include="DALaboratorys.cs" />
     <Compile Include="DALogin.cs" />
     <Compile Include="DAPatients.cs" />
+    <Compile Include="DAPersons.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

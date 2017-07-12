@@ -41,8 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLDoctors.cs" />
+    <Compile Include="BLLaboratorys.cs" />
     <Compile Include="BLLogin.cs" />
     <Compile Include="BLPatients.cs" />
+    <Compile Include="BLPersons.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
