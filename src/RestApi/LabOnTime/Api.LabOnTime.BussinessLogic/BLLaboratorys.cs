@@ -6,7 +6,7 @@ namespace Api.LabOnTime.BussinessLogic
     public class BLLaboratorys
     {
         DALaboratorys daLaboratory = new DALaboratorys();
-        public DataTable GetLabortory (int filter)
+        public DataTable GetLabortorys (int filter)
         {
             return daLaboratory.GetLaboratorys(filter);
         }

@@ -16,7 +16,7 @@ namespace Api.LabOnTime.Controllers
         [HttpGet]
         public IHttpActionResult GetLabortory(int filter)
         {
-            var dt = bl.GetLabortory(filter);
+            var dt = bl.GetLabortorys(filter);
 
             LaboratoryModel labModel = new LaboratoryModel();
             foreach (DataRow row in dt.Rows)

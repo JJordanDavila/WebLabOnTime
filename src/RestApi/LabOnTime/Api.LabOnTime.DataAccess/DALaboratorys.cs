@@ -14,7 +14,7 @@ namespace Api.LabOnTime.DataAccess
             MySqlDataAdapter da = new MySqlDataAdapter();
             DataTable dt = new DataTable();
             cnn.Open();
-            cmd = new MySqlCommand("USP_LaboratoryList", cnn);
+            cmd = new MySqlCommand("USP_LaboratorysList", cnn);
             cmd.Parameters.Add("filter", MySqlDbType.Int32).Value = Filter;
             cmd.CommandType = CommandType.StoredProcedure;
             da.SelectCommand = cmd;
