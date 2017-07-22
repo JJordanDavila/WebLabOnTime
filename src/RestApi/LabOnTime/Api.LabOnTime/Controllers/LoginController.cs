@@ -30,5 +30,20 @@ namespace Api.LabOnTime.Controllers
 
             return Json(loginModel);
         }
+
+
+        [HttpPost]
+        public int UpdateUser(int id, string password, string address, string email, string phone)
+        {
+            var dt = blLogin.UpdateUser(id, password, address, email, phone);
+
+            return 1;
+        }
+
+
+
+
+
+
     }
 }

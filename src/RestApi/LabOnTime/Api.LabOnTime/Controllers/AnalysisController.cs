@@ -9,25 +9,25 @@ using System.Web.Http;
 
 namespace Api.LabOnTime.Controllers
 {
-    public class PersonsController : ApiController
+    public class AnalysisController : ApiController
     {
-        BLPersons bl = new BLPersons();
+        BLAnalysis bl = new BLAnalysis();
 
         [HttpGet]
-        public IHttpActionResult GetPersons(int filter)
+        public IHttpActionResult GetAnalysis(int filter)
         {
-            var dt = bl.GetPersons(filter);
+            var dt = bl.GetAnalysis(filter);
 
-            PersonModel perModel = new PersonModel();
+            AnalysisModel analysisModel = new AnalysisModel();
             foreach (DataRow row in dt.Rows)
             {
-                PersonDTO lab = new PersonDTO
+                AnalysisDTO analysis = new AnalysisDTO
                 {
                     id = int.Parse(row["id"].ToString()),
-                    names = row["names"].ToString()
+                    name = row["name"].ToString()
 
                 };
-                perModel.person.Add(lab);
+                analysisModel.analysis.Add(analysis);
             }
 
             if (dt == null)
@@ -35,7 +35,7 @@ namespace Api.LabOnTime.Controllers
                 throw new HttpResponseException(Request.CreateResponse(HttpStatusCode.NotFound));
             }
 
-            return Json(perModel);
+            return Json(analysisModel);
         }
     }
 }

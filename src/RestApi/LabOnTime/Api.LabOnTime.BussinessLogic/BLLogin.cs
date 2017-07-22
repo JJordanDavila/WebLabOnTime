@@ -11,5 +11,13 @@ namespace Api.LabOnTime.BussinessLogic
         {
             return daLogin.ValidateUser(user, password);
         }
+
+        public int UpdateUser(int id, string password, string address, string email, string phone)
+        {
+            return daLogin.UpdateUser(id, password, address, email, phone);
+        }
+
+
+
     }
 }

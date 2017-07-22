@@ -14,7 +14,7 @@ namespace Api.LabOnTime.Controllers
         BLLaboratorys bl = new BLLaboratorys();
 
         [HttpGet]
-        public IHttpActionResult GetLabortory(int filter)
+        public IHttpActionResult GetLabortorys(int filter)
         {
             var dt = bl.GetLabortorys(filter);
 

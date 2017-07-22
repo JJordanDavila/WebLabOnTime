@@ -2,9 +2,9 @@
 
 namespace Api.LabOnTime.Models.DTO
 {
-    public class PersonDTO
+    public class AnalysisDTO
     {
         public int id { get; set; }
-        public string names { get; set; }
+        public string name { get; set; }
     }
 }

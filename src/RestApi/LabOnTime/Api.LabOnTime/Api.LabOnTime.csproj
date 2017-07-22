@@ -87,27 +87,31 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\DoctorsController.cs" />
+    <Compile Include="Controllers\LaboratoryAnalysisController.cs" />
     <Compile Include="Controllers\LaboratorysController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\PatientsController.cs" />
-    <Compile Include="Controllers\PersonsController.cs" />
+    <Compile Include="Controllers\AnalysisController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\DoctorModel.cs" />
     <Compile Include="Models\DTO\DoctorsDTO.cs" />
+    <Compile Include="Models\DTO\LaboratoryAnalysisDTO.cs" />
     <Compile Include="Models\DTO\LaboratoryDTO.cs" />
     <Compile Include="Models\DTO\PatientDTO.cs" />
-    <Compile Include="Models\DTO\PersonDTO.cs" />
+    <Compile Include="Models\DTO\AnalysisDTO.cs" />
+    <Compile Include="Models\LaboratoryAnalysisModels.cs" />
     <Compile Include="Models\LaboratoryModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\PatientModel.cs" />
-    <Compile Include="Models\PersonModel.cs" />
+    <Compile Include="Models\AnalysisModel.cs" />
     <Compile Include="Models\Request\RequestValidateUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\george.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
