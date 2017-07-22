@@ -20,6 +20,7 @@ namespace Api.LabOnTime.DataAccess
             cmd.CommandType = CommandType.StoredProcedure;
             da.SelectCommand = cmd;
             da.Fill(dt);
+            cnn.Close();
             return dt;
         }
 
