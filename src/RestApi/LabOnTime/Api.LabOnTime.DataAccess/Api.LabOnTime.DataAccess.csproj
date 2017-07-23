@@ -45,10 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DACommentAnalysis.cs" />
     <Compile Include="DALaboratoryAnalysis.cs" />
     <Compile Include="DADoctors.cs" />
     <Compile Include="DALaboratorys.cs" />
     <Compile Include="DALogin.cs" />
+    <Compile Include="DAPatientAnalysis.cs" />
     <Compile Include="DAPatients.cs" />
     <Compile Include="DAAnalysis.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

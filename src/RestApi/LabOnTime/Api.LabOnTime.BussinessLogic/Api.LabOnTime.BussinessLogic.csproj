@@ -40,10 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLCommentAnalysis.cs" />
     <Compile Include="BLDoctors.cs" />
     <Compile Include="BLLaboratoryAnalysis.cs" />
     <Compile Include="BLLaboratorys.cs" />
     <Compile Include="BLLogin.cs" />
+    <Compile Include="BLPatientAnalysis.cs" />
     <Compile Include="BLPatients.cs" />
     <Compile Include="BLAnalysis.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

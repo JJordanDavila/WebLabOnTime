@@ -43,6 +43,5 @@ namespace Api.LabOnTime.DataAccess
             return query;
         }
 
-
     }
 }
