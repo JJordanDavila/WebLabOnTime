@@ -7,6 +7,7 @@ namespace Api.LabOnTime.Models.DTO
 {
     public class LaboratoryAnalysisDTO
     {
+        public int id_medical_analisis { get; set; }
         public int id_request_analisis { get; set; }
         public string resultado_laboratorio { get; set; }
         public string status_laboratorio { get; set; }

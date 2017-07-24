@@ -22,6 +22,7 @@ namespace Api.LabOnTime.Controllers
             {
                 LaboratoryAnalysisDTO laboratoryAnalysis = new LaboratoryAnalysisDTO
                 {
+                    id_medical_analisis = int.Parse(row["id_medical_analisis"].ToString()),
                     id_request_analisis = int.Parse(row["id_request_analisis"].ToString()),
                     resultado_laboratorio = row["resultado_laboratorio"].ToString(),
                     status_laboratorio= row["status_laboratorio"].ToString(),
