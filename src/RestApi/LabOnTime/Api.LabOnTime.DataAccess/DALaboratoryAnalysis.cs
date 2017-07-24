@@ -15,9 +15,9 @@ namespace Api.LabOnTime.DataAccess
             cnn.Open();
             cmd = new MySqlCommand("USP_LaboratoryAnalysisList", cnn);
             cmd.Parameters.Add("laboratorio", MySqlDbType.Int32).Value = laboratorio;
-            cmd.Parameters.Add("analisis", MySqlDbType.Int32).Value = laboratorio;
-            cmd.Parameters.Add("paciente", MySqlDbType.Int32).Value = laboratorio;
-            cmd.Parameters.Add("doctor", MySqlDbType.Int32).Value = laboratorio;
+            cmd.Parameters.Add("analisis", MySqlDbType.Int32).Value = analisis;
+            cmd.Parameters.Add("paciente", MySqlDbType.Int32).Value = paciente;
+            cmd.Parameters.Add("doctor", MySqlDbType.Int32).Value = doctor;
             cmd.CommandType = CommandType.StoredProcedure;
             da.SelectCommand = cmd;
             da.Fill(dt);
