@@ -22,7 +22,7 @@ namespace Api.LabOnTime.Controllers
             loginModel.user.persons_id = int.Parse(dt.Rows[0]["persons_id"].ToString()); 
             loginModel.user.name = dt.Rows[0]["name"].ToString();
             loginModel.user.password = dt.Rows[0]["password"].ToString();
-            loginModel.user.name = dt.Rows[0]["name"].ToString();
+            loginModel.user.names = dt.Rows[0]["names"].ToString();
             loginModel.user.lastnames = dt.Rows[0]["lastnames"].ToString();
             loginModel.user.address = dt.Rows[0]["address"].ToString();
             loginModel.user.phone = dt.Rows[0]["phone"].ToString();
