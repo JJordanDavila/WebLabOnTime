@@ -1,8 +1,9 @@
 ﻿using Api.LabOnTime.BussinessLogic;
 using Api.LabOnTime.Models;
 using Api.LabOnTime.Models.DTO;
-using System;
-using System.Data;
+using Api.LabOnTime.BussinessLogic;
+using Api.LabOnTime.Models;
+using Api.LabOnTime.Models.Response;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
@@ -14,11 +15,15 @@ namespace Api.LabOnTime.Controllers
         BLCommentAnalysis bl = new BLCommentAnalysis();
 
         [HttpPost]
-        public int InsertCommentAnalysis(int medicalAnalysisId, string description, string priority)
+        public IHttpActionResult InsertCommentAnalysis(int medicalAnalysisId, string description, string priority)
         {
-            var dt = bl.InsertCommentAnalysis(medicalAnalysisId, description, priority);
 
-            return 1;
+            var response = new ResponseBD();
+            var responsebl = bl.InsertCommentAnalysis(medicalAnalysisId, description, priority);
+            response.responseBD.Estado = responsebl.estado;
+            response.responseBD.Mensaje = responsebl.mensaje;
+
+            return Json(response);
         }
     }
 }
