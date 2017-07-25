@@ -1,4 +1,6 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Api.LabOnTime.Entities;
+using MySql.Data.MySqlClient;
+using System;
 using System.Configuration;
 using System.Data;
 
@@ -25,22 +27,32 @@ namespace Api.LabOnTime.DataAccess
         }
 
 
-        public int UpdateUser (int id ,string password, string address, string email,string phone)
+        public ResponseBD UpdateUser (int id ,string password, string address, string email,string phone)
         {
-            MySqlConnection cnn = new MySqlConnection(conexionString);
-            MySqlCommand cmd = new MySqlCommand();
-            MySqlDataAdapter da = new MySqlDataAdapter();
-            cmd = new MySqlCommand("USP_UsersUpdate", cnn);
-            cmd.Parameters.Add("id", MySqlDbType.VarChar).Value = id;
-            cmd.Parameters.Add("password", MySqlDbType.VarChar).Value = password;
-            cmd.Parameters.Add("address", MySqlDbType.VarChar).Value = address;
-            cmd.Parameters.Add("email", MySqlDbType.VarChar).Value = email;
-            cmd.Parameters.Add("phone", MySqlDbType.VarChar).Value = phone;
-            cmd.CommandType = CommandType.StoredProcedure;
-            cnn.Open();
-            int query = cmd.ExecuteNonQuery();
-            cnn.Close();
-            return query;
+            var response = new ResponseBD();
+            try
+            {
+                MySqlConnection cnn = new MySqlConnection(conexionString);
+                MySqlCommand cmd = new MySqlCommand();
+                MySqlDataAdapter da = new MySqlDataAdapter();
+                cmd = new MySqlCommand("USP_UsersUpdate", cnn);
+                cmd.Parameters.Add("id", MySqlDbType.VarChar).Value = id;
+                cmd.Parameters.Add("password", MySqlDbType.VarChar).Value = password;
+                cmd.Parameters.Add("address", MySqlDbType.VarChar).Value = address;
+                cmd.Parameters.Add("email", MySqlDbType.VarChar).Value = email;
+                cmd.Parameters.Add("phone", MySqlDbType.VarChar).Value = phone;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cnn.Open();
+                int query = cmd.ExecuteNonQuery();
+                cnn.Close();
+                response.estado = true;
+            }
+            catch(Exception ex)
+            {
+                response.estado = false;
+                response.mensaje = "Ocurrio un problema en el servicio.";
+            }
+            return response;
         }
 
     }

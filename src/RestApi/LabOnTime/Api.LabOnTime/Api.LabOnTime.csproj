@@ -99,6 +99,7 @@
     </Compile>
     <Compile Include="Models\CommentAnalysisModel.cs" />
     <Compile Include="Models\DoctorModel.cs" />
+    <Compile Include="Models\DTO\BDResponseDTO.cs" />
     <Compile Include="Models\DTO\CommentAnalysisDTO.cs" />
     <Compile Include="Models\DTO\DoctorsDTO.cs" />
     <Compile Include="Models\DTO\LaboratoryAnalysisDTO.cs" />
@@ -113,6 +114,7 @@
     <Compile Include="Models\PatientModel.cs" />
     <Compile Include="Models\AnalysisModel.cs" />
     <Compile Include="Models\Request\RequestValidateUser.cs" />
+    <Compile Include="Models\Response\ResponseBD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

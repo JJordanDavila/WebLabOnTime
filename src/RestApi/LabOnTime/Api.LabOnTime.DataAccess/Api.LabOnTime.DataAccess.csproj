@@ -55,5 +55,11 @@
     <Compile Include="DAAnalysis.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Api.LabOnTime.Entities\Api.LabOnTime.Entities.csproj">
+      <Project>{08E1B0AD-8567-4760-840C-FEC3DB317FF7}</Project>
+      <Name>Api.LabOnTime.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

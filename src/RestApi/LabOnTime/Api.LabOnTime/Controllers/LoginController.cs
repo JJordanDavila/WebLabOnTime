@@ -1,6 +1,6 @@
 ﻿using Api.LabOnTime.BussinessLogic;
 using Api.LabOnTime.Models;
-using System;
+using Api.LabOnTime.Models.Response;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
@@ -44,11 +44,14 @@ namespace Api.LabOnTime.Controllers
 
 
         [HttpPost]
-        public int UpdateUser(int id, string password, string address, string email, string phone)
+        public IHttpActionResult UpdateUser(int id, string password, string address, string email, string phone)
         {
-            var dt = blLogin.UpdateUser(id, password, address, email, phone);
+            var response = new ResponseBD();
+            var responsebl = blLogin.UpdateUser(id, password, address, email, phone);
+            response.responseBD.Estado = responsebl.estado;
+            response.responseBD.Mensaje = responsebl.mensaje;
 
-            return 1;
+            return Json(response);
         }
 
 

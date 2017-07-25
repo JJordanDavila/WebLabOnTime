@@ -55,6 +55,10 @@
       <Project>{e2cee1b6-f04b-4000-88c0-11f699a44b5d}</Project>
       <Name>Api.LabOnTime.DataAccess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Api.LabOnTime.Entities\Api.LabOnTime.Entities.csproj">
+      <Project>{08E1B0AD-8567-4760-840C-FEC3DB317FF7}</Project>
+      <Name>Api.LabOnTime.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
